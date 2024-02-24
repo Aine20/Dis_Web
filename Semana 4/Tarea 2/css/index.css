@@ -1,0 +1,53 @@
+.backg {
+    background-color: #fff3e6;
+}
+
+.title1 {
+    color: #450920;
+}
+
+.cardColor1 {
+    background-color: #a53860;
+}
+
+.cardColor2 {
+    background-color: #450920;
+}
+
+.section1 {
+    background-color: #450920;
+}
+
+.container-fluid1 {
+    padding-top: 210px;
+    padding-bottom: 200px;
+}
+
+.container-fluid2 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.banner1 {
+    background-image: url("../imagenes/banner1.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    background-color: #fff;
+    background-blend-mode: luminosity;
+}
+
+
+.highlight {
+    color: #da627d
+}
+
+
+i {
+    font-size: 60px;
+    color: #da627d;
+}
+
+a{
+    color: #a53860;
+}

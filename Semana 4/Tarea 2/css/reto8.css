@@ -1,0 +1,14 @@
+body{
+    background-image: url("../imagenes/background1.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.title1 {
+    color: #450920;
+}
+
