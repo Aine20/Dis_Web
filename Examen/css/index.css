@@ -1,0 +1,152 @@
+/* html{
+    font-size: 24px;
+} */
+
+body {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: lightgrey;
+}
+
+
+.banner1 {
+    background-image: url('../imagenes/banner1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: #928372;
+    background-blend-mode: multiply;
+}
+
+
+.formulario {
+    background-image: url('../imagenes/review.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(161, 161, 160);
+    background-blend-mode: multiply;
+}
+
+.colorIcono {
+    color: gainsboro;
+}
+
+.colorIcono i {
+    font-size: 45px;
+}
+
+.infoImage {
+    width: 100%;
+}
+
+.espacio {
+    height: 100vh;
+}
+
+.titulo {
+    padding-top: 305px
+}
+
+i {
+    font-size: 60px;
+    color: green;
+}
+
+.logo {
+    width: 4rem;
+}
+
+
+.bannerparallax {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(40vh);
+    background-position: center;
+    background-image: url('../imagenes/paralax.jpg');
+    background-color: lightgreen;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.scrollToTop {
+    position: fixed;
+    bottom: 65px;
+    right: 1150px;
+    width: 100px;
+    height: 50px;
+}
+
+
+.container-botonws {
+    background-color: #e4e4e4;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+}
+
+
+.container-botonws:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+.botonws {
+    width: 60px;
+    transition: ease 1s;
+}
+
+/*MEDIAS QUERYS*/
+
+/* Extra Small devices (landscape phones, 576px and down)*/
+@media (max-width: 576px) {
+    .arrow {
+        width: 50%;
+    }
+
+    .container-botonws {
+        position: fixed;
+        z-index: 50;
+        bottom: 50px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    body,
+    h5,
+    h6 {
+        font-size: 24px;
+    }
+
+    .scrollToTop {
+        right: 2250px;
+
+    }
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
