@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PharmaVida</title>
+    <link rel="icon" href="imagenes/favicon.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="p-5"></div>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/banner1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/bannerPanadol.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/bannerDalivio.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #F1F1F1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PharmaVida</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Proyecto/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/Proyecto/planes.html">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/Proyecto/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/Proyecto/FAQs.html">Preguntas
+                            Frecuentes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Nosotros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Proyecto/sucursales.html">Sucursales</a></li>
+                            <li><a class="dropdown-item" href="/Proyecto/nosotros.html">Sobre Nosotros</a></li>
+                            <li><a class="dropdown-item" href="/Proyecto/medicos.html">Nuestros Medicos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="buscar">
+                    <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Suscríbete a nuestro boletín
+                            informativo</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3 d-flex align-items-center justify-content-between">
+                                <label for="recipient-name" class="col-form-label">Ingresa tu correo:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="recipient-name">
+                                    <button type="button" class="btn" data-bs-toggle="popover" data-bs-placement="right"
+                                        data-bs-custom-class="custom-popover" data-bs-title="Completa con tu correo"
+                                        data-bs-content="Completa con tu correo para obtener información sobre descuentos y promociones exclusivas">
+                                        <i class="uil uil-comment-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-outline-info">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <h1 class="fs-1 text-center pt-5">Algunos de nuestros productos más vendidos</h1>
+        <div class="row p-5">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/Proyecto/imagenes/biotos.png" class="card-img-top imgCard mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Biotos Inmune Solución</h5>
+                        <p class="card-text">₡14,925</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/Proyecto/imagenes/enterogermina.jpg" class="card-img-top imgCard mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Enterogermina</h5>
+                        <p class="card-text">₡1,235</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/Proyecto/imagenes/isdin.jpg" class="card-img-top imgCard mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Isdin Fotoprotector</h5>
+                        <p class="card-text">₡6,790</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/Proyecto/imagenes/niacinamida.png" class="card-img-top imgCard mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">La Roche Posay Niacinamida</h5>
+                        <p class="card-text">₡6,790</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/Proyecto/imagenes/Loratadina.jpeg" class="card-img-top imgCard mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Loratadina Jarabe MK</h5>
+                        <p class="card-text">₡3,876</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/Proyecto/imagenes/pepto.jpg" class="card-img-top imgCard mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Peptobismol</h5>
+                        <p class="card-text">₡6,400</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="bannerparallax">
+        <div class="container">
+
+        </div>
+    </section>
+
+
+    <section class="container-fluid">
+        <h1 class="fs-1 text-center pt-5 ">Algunos beneficios de nuestra farmacia</h1>
+        <div class="row p-5">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="uil uil-shopping-bag icon icon-container"></i>
+                    <h5 class="pt-3">Farmacia online</h5>
+                </div>
+                <p class="text-center">
+                    Sin tener que salir de tu casa u oficina, podes pedir tus medicamentos a travéz de la plataforma en
+                    línea.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="uil uil-home icon icon-container"></i>
+                    <h5 class="pt-3">Entrega a domicilio</h5>
+                </div>
+                <p class="text-center">
+                    El servicio de entrega a domicilio tiene un cargo extra de ₡1.000 para compras menores a ₡ 5.000.
+                    Horario de entregas a domicilio: Lunes a Viernes de 8:00 am a 8:00 pm, Sábados y Domingos de 8:00 am
+                    a 6:00 pm.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="uil uil-bill icon icon-container"></i>
+                    <h5 class="pt-3">Pago de medicamentos</h5>
+                </div>
+                <p class="text-center">
+                    Todos los medicamentos solicitados a través de la farmacia online, se pueden realizar a travez de
+                    tarjeta de crédito, débito o transferencia bancaria.
+                </p>
+            </div>
+
+    </section>
+
+
+    <!-- Afiliarse -->
+    <section class="form1 p-5">
+        <div class="container">
+            <h3 class="text-center pt-5">Formulario de contacto</h3>
+            <div class="row">
+                <p class="text-center">Dejanos tus datos y te estaremos enviando información para que formés parte de
+                    PharmaVida</p>
+            </div>
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="pt-3">
+                            <label for="name" class="">Nombre:</label>
+                            <input type="text" class="form-control" placeholder="Escriba su nombre" size="10" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pt-3">
+                            <label for="email" class="">Correo:</label>
+                            <input type="email" class="form-control" placeholder="Escriba su correo" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pt-3">
+                            <label for="celular" class="">Celular:</label>
+                            <input type="celular" class="form-control" placeholder="Escriba su celular" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5"></div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-secondary btn-lg">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <div class="container-botonws">
+        <a href="https://walink.co/df23e7" class="whatapp" target="blank">
+            <img class="botonws" src="imagenes/whatsapp_logo.png" alt="">
+        </a>
+    </div>
+
+
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 text-center mb-4 mb-md-0 pt-5">
+                <h1 class="mb-5">Servicio y Contacto</h1>
+                <p class="mb-0">Linea de Servicio al cliente</p>
+                <p class="">2546-8574</p>
+                <p class="mb-0">Contáctanos por correo</p>
+                <p class="">pharmaVida@gmail.com</p>
+                <p class="mb-0">Nuestro horario</p>
+                <p class="">Lunes a Viernes - 8:00am a 10:00pm</p>
+            </div>
+            <div class="col-md-6 text-center pt-5">
+                <h1 class="mb-5">Nuestras redes sociales</h1>
+                <a href="https://www.facebook.com" class="iconSocial" target="blank">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" class="iconSocial" target="blank">
+                    <i class="uil uil-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" class="iconSocial" target="blank">
+                    <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#4F73A7" fill-opacity="1"
+                    d="M0,96L60,128C120,160,240,224,360,213.3C480,203,600,117,720,112C840,107,960,181,1080,192C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    
+    <script>
+        // Activar el modal al cargar la página
+        document.addEventListener("DOMContentLoaded", function () {
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            myModal.show();
+        });
+    </script>
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+    <script src="https://kit.fontawesome.com/6df3345e67.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

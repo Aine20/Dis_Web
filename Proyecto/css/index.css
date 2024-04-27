@@ -1,0 +1,259 @@
+html {
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+.imgCard {
+    width: 250px;
+}
+
+.bannerparallax {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(40vh);
+    background-position: center;
+    background-image: url('../imagenes/pills 2.jpg');
+}
+
+.banner1 {
+    background-color: #B8D4E0;
+}
+
+.banner2 {
+    background-color: #E1D8EC;
+}
+
+.bannerDoc {
+    background-color: #D0F9FF;
+}
+
+.bannerDocImg {
+    width: 100%;
+}
+
+.bannerDocImg2 {
+    height: 600px;
+    padding-left: 400px;
+
+}
+
+.banner3 {
+    background-color: #DFD4A6;
+    /* background-color: #FFFAC6; */
+}
+
+.banner4 {
+    background-color: #D0B2BC;
+}
+
+.banner5 {
+    background-color: #CCCFB2;
+}
+
+.imgDoc {
+    width: 200px;
+    height: 175px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.espacio {
+    height: 75vh;
+    /* height: 500px; */
+}
+
+.espacio2 {
+    height: 50vh;
+    /* height: 500px; */
+}
+
+.blogImg {
+    width: 400px;
+}
+
+.galeria {
+    width: 300px;
+    /* height: 50px; */
+}
+
+.plan-table {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #d6d6d6;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.plan-table:hover {
+    background-color: #B8D4E0;
+    color: #365176;
+    margin-top: -40px;
+    z-index: 10;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in;
+    border: none;
+    box-shadow: rgba(127, 197, 207, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
+}
+
+.icon {
+    font-size: 60px;
+    color: aliceblue
+}
+
+.icon-container {
+    background-color: #00AAB7;
+    border-radius: 20%;
+    padding: 15px;
+}
+
+.form1 {
+    background-color: #FCF2D6
+}
+
+.iconSocial {
+    font-size: 60px;
+
+}
+
+.infoIcon {
+    font-size: 30px;
+    top: 50px;
+}
+
+.container-botonws {
+    position: fixed;
+    z-index: 1000;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+}
+.video{
+    position: relative;
+    height: calc(40vh);
+}
+
+.container-botonws:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.botonws {
+    width: 60px;
+    transition: ease 1s;
+}
+
+.clipImg1 {
+    width: 30rem;
+    clip-path: polygon(30% 0%, 50% 15%, 70% 0%, 90% 10%, 100% 35%, 80% 70%, 50% 100%, 20% 70%, 0% 35%, 10% 10%);
+}
+
+
+/************ TABLA DE PRECIOS ***************/
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.price-table {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #d6d6d6;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.price-table:hover {
+    background-color: #00469b;
+    margin-top: -40px;
+    z-index: 10;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in;
+    border: none;
+    box-shadow: rgba(127, 197, 207, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
+}
+
+.price-table:hover * {
+    color: #fff !important;
+}
+
+
+/**************** MEDIA QUERIES ******************/
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 576px) {
+    .price-table {
+        padding-bottom: 50px;
+    }
+
+    .espacio {
+        height: 50vh;
+    }
+
+    .clipImg1 {
+        width: 13rem;
+    }
+
+    .blogImg {
+        width: 250px;
+    }
+
+    .lottie {
+        display: none;
+    }
+
+    .banner1 {
+        width: 375px
+    }
+
+    .banner2{
+        width: 375px
+    }
+
+    .banner3 {
+        width: 375px
+    }
+
+    .textMed {
+        font-size: 30px;
+    }
+
+    .banner4 {
+        width: 375px
+    }
+
+    .banner5 {
+        width: 375px
+    }
+
+    .bannerDocImg {
+        width: 300px;
+    }
+
+    .bannerDocImg1 {
+        width: 220px;
+    }
+
+    .bannerDocImg2 {
+        height: 200px;
+        padding-left: 300px;
+    }
+
+    .bannerDoc {
+        width: 375px
+    }
+
+    .info{
+        padding: 10px;
+    }
+}
